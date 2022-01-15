@@ -1,0 +1,40 @@
+@import "../../global.scss";
+
+.menu
+{
+    background-color: $mainColour;
+    color: white;
+    position:fixed;
+    top:6.2vw;
+    right:-190px;
+    opacity: 0.7;
+    z-index: 2;
+    width:190px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition:all 1s ease;
+    font-size: 16px;
+
+    ul{
+        li{
+            padding-top: 30px;
+            padding-right: 50px;
+            a{
+                text-decoration: none;
+                font-size:28pt;
+                
+                
+            }
+        }
+    }
+    
+    
+    &.active{
+        background-color: salmon;
+        transform: translateX(-190px);
+        opacity:1;
+    }
+}

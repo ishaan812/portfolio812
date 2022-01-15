@@ -42,9 +42,9 @@ export default function Intro() {
                 </div>
                 <div className="right">
                     <div className="graphic">
-                        <div className="pixelart-to-css" />
-                        <a href="#portfolio"><MdArrowDropDownCircle className="arrow"/></a>  
+                        <img src={require('./anim.gif')} alt="Animation" className="graphicvid"/>    
                     </div>
+                    <a href="#portfolio"><MdArrowDropDownCircle className="arrow"/></a>  
                 </div>
             </div>
         </div>

@@ -34,7 +34,7 @@ export default function Intro() {
                         </div>
                         <div className="detail">
                             <div className="college"> <MdOutlineSchool className="gradicon"/>  B.Tech IT, D.J Sanghvi Institute of Technology (2024)</div>
-                            <div className="age"><BsSun className="ageicon"/>20 Years old</div>
+                            <div className="age"><BsSun className="ageicon"/>20 Years Old</div>
                             <div className="loc"><HiOutlineLocationMarker className="locicon"/>Mumbai</div>
                             <div className="job"><MdOutlineMonitor className="jobicon"/>Software Developer</div>
                         </div>
@@ -44,7 +44,7 @@ export default function Intro() {
                     <div className="graphic">
                         <img src={require('./anim.gif')} alt="Animation" className="graphicvid"/>    
                     </div>
-                    <a href="#portfolio"><MdArrowDropDownCircle className="arrow"/></a>  
+                    <MdArrowDropDownCircle className="arrow" onClick={event=>window.open('http://localhost:3000/#portfolio','_self')} />  
                 </div>
             </div>
         </div>

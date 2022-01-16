@@ -27,7 +27,11 @@
     .left {
       width: 100%;
       display: flex;
-      overflow: auto;
+      overflow: hidden;
+      @include mobile {
+        width:100vw;
+        height:100vh;
+      }
 
       .textbox {
         transition: all 1s ease;
@@ -43,7 +47,7 @@
 
         @include mobile {
           font-size: 7vw;
-          top: 10%;
+          top: 20%;
           left: 10%;
           width: 80%;
           height: 80%;
@@ -53,15 +57,15 @@
           display: flex;
           width: 100%;
           height: 4vw;
-          margin-top: 2.3vw;
+          margin-top: 2vw;
           margin-left: 1.7vw;
           color: white;
           font-size: 3.5vw;
           overflow: hidden;
 
           @include mobile {
-            font-size: 7vw;
-            height: 9.5vw;
+            font-size: 24px;
+            height: 6vh;
 
           }
 
@@ -78,15 +82,14 @@
           align-items: baseline;
 
           @include mobile {
-            height: 18vw;
+            height: 10vh;
           }
 
           .im {
             font-size: 1.1vw;
-            width: 22%;
-
+            width: 9vw;
             @include mobile {
-              font-size: 4.8vw;
+              font-size: 3.3vw;
             }
           }
 
@@ -96,8 +99,10 @@
             font-family: 'Cookie';
 
             @include mobile {
-              font-size: 20vw;
+              font-size: 17vw;
+              
             }
+            
           }
         }
 
@@ -117,8 +122,8 @@
             height: 1.4vw;
 
             @include mobile {
-              font-size: 2.2vw;
-              height: 2.8vw;
+              font-size: 3vw;
+              height: 2vh;
             }
 
             .gradicon {
@@ -127,6 +132,10 @@
               width: 1.4vw;
               height: 1.4vw;
               margin-right: 9px;
+              @include mobile {
+                width: 2vh;
+                height: 2.3vh;
+              }
             }
           }
 
@@ -141,8 +150,8 @@
             height: 1.4vw;
 
             @include mobile {
-              font-size: 2.2vw;
-              height: 2.8vw;
+              font-size: 3vw;
+              height: 2vh;
             }
 
             .ageicon {
@@ -151,6 +160,10 @@
               width: 1.4vw;
               height: 1.4vw;
               margin-right: 9px;
+              @include mobile {
+                width: 2vh;
+                height: 2.3vh;
+              }
             }
           }
 
@@ -165,8 +178,8 @@
             height: 1.4vw;
 
             @include mobile {
-              font-size: 2.2vw;
-              height: 2.8vw;
+              font-size: 3vw;
+              height: 2vh;
             }
 
             .locicon {
@@ -175,6 +188,10 @@
               width: 1.4vw;
               height: 1.4vw;
               margin-right: 9px;
+              @include mobile {
+                width: 2vh;
+                height: 2.3vh;
+              }
             }
           }
 
@@ -190,8 +207,8 @@
             height: 1.4vw;
 
             @include mobile {
-              font-size: 2.2vw;
-              height: 2.8vw;
+              font-size: 3vw;
+              height: 2.3vh;
             }
 
             .jobicon {
@@ -200,7 +217,10 @@
               width: 1.4vw;
               height: 1.4vw;
               margin-right: 9px;
-
+              @include mobile {
+                width: 2vh;
+                height: 2vh;
+              }
             }
           }
         }
@@ -223,11 +243,17 @@
       width: 100%;
       display: flex;
       overflow: hidden;
+      
+      
       .graphic{
         overflow: hidden;
           width: 100%;
           height: 100%;
           margin-top:5%;
+          @include mobile {
+            margin-top: 10%;
+            margin-left: 12%;
+      }
         .graphicvid {
             width:80%;
             height:80%;

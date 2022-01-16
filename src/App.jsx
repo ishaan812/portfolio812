@@ -21,7 +21,7 @@ function App() {
       <Menu MenuOpen={MenuOpen} SetMenuOpen={SetMenuOpen}/>
       <Instapopup Instapopupopen={Instapopupopen} setInstapopupopen={setInstapopupopen}/>
       <div className="sections">
-        <Intro/>
+        <Intro className="intro"/>
         <Portfolio Instapopupopen={Instapopupopen} setInstapopupopen={setInstapopupopen}/>
         <Contact/>
       </div>

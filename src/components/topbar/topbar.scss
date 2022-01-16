@@ -1,5 +1,6 @@
 @import "../../global.scss";
 
+
 .topbar
 {
     width:100%;
@@ -12,7 +13,9 @@
     transition: 2s ease;
     overflow: hidden;
 
-
+    @include mobile {
+        height:20px;
+    }
 
 .Wrapper
 {
@@ -32,38 +35,60 @@
             text-decoration: none;
             padding-right:50px;
             padding-left: 20px;
+            @include mobile {
+                font-size: 20px;
+          }
         }
 
         .github{
             display:grid;
             margin-right: 30px;
+            @include mobile {
+                margin-right: 20px;
+          }
+            
             .codeicon{
                 display:table-row;
                 margin-left: 7vw;
                 
                 width:2.1vw;
                 height:2.1vw;
+                @include mobile {
+                    width: 4vw;
+                    height:2vh;
+              }
             }
 
             span{
                 display:table-row;  
                 font-size: 1.1vw;
+                @include mobile {
+                    opacity: 0;
+              }
             }
         }  
     } 
 
         .mail{
             display:grid;
+            
             .mailicon{
                 display:table-row;
                 margin-left: 5vw;
                 width:2.1vw;
                 height:2.1vw;
+                @include mobile {
+                    width: 4vw;
+                    height:2vh;
+              }
             }
 
             span{
                 display:table-row;  
                 font-size: 1.1vw;
+                @include mobile {
+                    opacity: 0;
+              }
             }
         }  
     
@@ -85,6 +110,9 @@
                 padding-top:2%;
                 cursor: pointer;
                 overflow: hidden;
+                @include mobile{
+                    margin-right: 10%;
+                }
                 
                 
                 
@@ -94,6 +122,7 @@
                     height: 3px;
                     transition: all 2s ease;
                     transform-origin: left;
+                    
                     
                     
                 

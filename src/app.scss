@@ -1,14 +1,16 @@
 @import "./global.scss";
 .App{
-    height:100vh;
+    height: 100vh;
+    width: 100vw;
 
     .sections{
+        box-sizing: border-box;
         width:100%;
-        height: calc(100vh - 6.2vw);
+        height: calc(100vh - 70px);
         background-color: salmon;
         position: relative;
         z-index: 0;
-        top: 6.2vw;
+        top: 70px;
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         scrollbar-width: none;
@@ -18,12 +20,19 @@
 
         @include mobile{
             height: calc(100vh - 20px);
+            top: 20px;
     }
 
         *{
+            box-sizing: border-box;
             width:100vw;
-            height:calc(100vh - 100px);
+            height:calc(100vh - 70px);
             scroll-snap-align: start;
+
+            @include mobile{
+                height: calc(100vh - 20px);
+                top: 20px;
+        }
             
             
         }

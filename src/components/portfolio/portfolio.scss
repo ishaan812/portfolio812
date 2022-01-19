@@ -1,141 +1,131 @@
 @import "../../global.scss";
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
-
 .portfolio {
-    width:100%;
-    height: 100%;
     background-color: #28282B;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    .row1{
+
+    .slider {
+        position: relative;
         display: flex;
+        flex-wrap: wrap;
         overflow: hidden;
-        
-    .item{
-        flex:0.5;
-        background-color: bisque;
-        width: 40%;
-        height:70%;
-        overflow: hidden;
-        margin:5%;
-        box-shadow:15px 15px black;
+       
         
         
-        .thumbnail{
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-            .tn{
-                width:90%;
-                height:90%;
-                flex:1;
-                width: 100%;
-                height:100%;
-            }
-        }
-        .caption{
+
+        .itemwrapper {
+            max-width: 50vw;
+            max-height: 25vw;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
             position: relative;
-            left:43%;
-            bottom: 30px;
-            color:black;
-            font-size: 14pt;
-        }
-    }
-        .instagramy{   
-            flex:0.5;
-            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-            width: 40%;
-            height:70%;
             overflow: hidden;
-            margin:5%;
-            box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px, rgba(0, 0, 0, 0.3) 0px 10px 15px -5px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
-            transition: all 1s ease-in;
             
-            &:hover{
-                transform: scale(1.1);
-                box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-            }
-            
-            .thumbnail{
+                     
+
+            //Instagram
+
+            .instagramy {
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                width: 400px;
+                height: 200px;
                 overflow: hidden;
-                margin:2%;
-                width:90%;
-                height:90%;
-                .tn{
-                    flex:1;
-                    width: 50%;
-                    height: 100%;
-                    border-image-repeat: round;
-                    position: relative;
-                    left:25%;
-                    bottom:10%;
-                    transition: all 2s ease;
-                    
-                    
-                    
-                }
-            }
-            .caption{
-                position: relative;
-                bottom: 20%;
-                color:#28282B;
-                text-decoration: solid;
-                font-size: 2vw;
-                padding-left:20%;
-                padding-right:40%; 
-                padding-bottom: 50%;
-                font-family: 'Kalam', cursive;
-                font-weight: 700;
+                box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px, rgba(0, 0, 0, 0.3) 0px 10px 15px -5px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
+                transition: all 1s ease-in;
+                margin-top: 5%;
                 
-                @include mobile{
-                    bottom: 10%;
-                    font-size: 1.5vh;
-                    padding-left: 5%;
-                    overflow-wrap: break-word;
+
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
                 }
+
+                .thumbnail {
+                    overflow: hidden;
+                    width: 90%;
+                    height: 90%;
+
+                    .tn {
+                        flex: 1;
+                        width: 50%;
+                        height: 100%;
+                        border-image-repeat: round;
+                        position: relative;
+                        left: 25%;
+                        bottom: 10%;
+                        transition: all 2s ease;
+
+
+
+                    }
+                }
+
+                .caption {
+                    position: relative;
+                    bottom: 13%;
+                    color: #28282B;
+                    text-decoration: solid;
+                    font-size: 2vw;
+                    padding-left: 15%;
+                    padding-right: 40%;
+                    padding-bottom: 50%;
+                    font-family: 'Kalam', cursive;
+                    font-weight: 700;
+
+                    @include mobile {
+                        bottom: 10%;
+                        font-size: 1.5vh;
+                        padding-left: 5%;
+                        overflow-wrap: break-word;
+                    }
+                }
+
+
             }
 
 
-        }
-    }
+            //General
 
-    .row2{
-        display: flex;
-        overflow: hidden;
-        .item{
-            flex:0.5;
-            background-color: bisque;
-            margin: 5%;
-            margin-top: 3%;
-            width: 40%;
-            height:70%;
-            overflow: hidden;
-            box-shadow:15px 15px black;
-            
-            .thumbnail{
+            .item {
+                background-color: bisque;
+                width: 400px;
+                height: 200px;
                 overflow: hidden;
-                width: 100%;
-                height: 100%;
-                .tn{
-                    width:100%;
-                    height:100%;
-                    flex:1;
+                margin-top: 5%;
+                margin-bottom: 0%;
+                .thumbnail {
+                    overflow: hidden;
+                    width: 100%;
+                    height: 100%;
+
+                    .tn {
+                        width: 90%;
+                        height: 90%;
+                        flex: 1;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .caption {
+                    position: relative;
+                    left: 36%;
+                    bottom: 12.5%;
+                    color: black;
+                    font-size: 14pt;
+                }
+
+                &.row2{
+                    margin-top: 0%;
                 }
             }
-            .caption{
-                position: relative;
-                bottom: 30px;
-                color:black;
-                font-size: 14pt;
-                padding-left:43%;
-                padding-right:39%; 
-            }
+            
         }
+
+        
+
     }
+
 }
-
-

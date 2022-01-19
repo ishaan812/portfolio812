@@ -15,7 +15,7 @@ export default function Contact() {
         <div className="contact" id="contact">
             <div className="wrapper">
                 <div className="left">
-                    <img src={require("./shake1.png")}  alt="shake" className="shake"></img>
+                    <img src="https://media.giphy.com/media/xT9IgLn1wzhNpRQfTy/giphy.gif"  alt="shake" className="shake"></img>
                 </div>
                 <div className="right">
                     <h1>Contact form</h1>
@@ -28,10 +28,8 @@ export default function Contact() {
                 </div>
             </div>
             <div className="footer">
-                <div className="bottom">
-                    <div className="ishaan">A website by Ishaan Shah</div>
-                    <div className="anay">Designed by Anay Shah</div>
-                </div>
+                <div className="ishaan">A website by Ishaan Shah</div>
+                <div className="anay">Designed by Anay Shah</div>
             </div>
             
          

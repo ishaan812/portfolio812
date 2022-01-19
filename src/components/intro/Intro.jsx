@@ -44,7 +44,7 @@ export default function Intro() {
                     <div className="graphic">
                         <img src={require('./anim.gif')} alt="Animation" className="graphicvid"/>    
                     </div>
-                    <MdArrowDropDownCircle className="arrow" onClick={event=>window.open('http://localhost:3000/#portfolio','_self')} />  
+                    <MdArrowDropDownCircle className="arrow" onClick={event=>window.open('#portfolio','_self')} />  
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@ import React,  {useState} from "react";
 import Intro from "./components/intro/Intro";
 import Topbar from "./components/topbar/Topbar";
 import Portfolio from "./components/portfolio/Portfolio";
-import Testimonials from "./components/testimonials/Testimonials";
+//import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact"
 import Menu from "./components/menu/menu"
 import Instapopup from "./components/instapopup/Instapopup";
@@ -23,7 +23,7 @@ function App() {
       <div className="sections">
         <Intro className="intro"/>
         <Portfolio Instapopupopen={Instapopupopen} setInstapopupopen={setInstapopupopen}/>
-        <Contact/>
+        <Contact />
       </div>
       
       

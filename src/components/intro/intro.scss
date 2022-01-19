@@ -11,14 +11,21 @@
   animation-name: example;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+  width: 100vw;
+  height:100vh;
+  padding-bottom: 6vh;
+  overflow: hidden;
 
-
+  @include mobile{
+    padding-bottom: 7vh;
+  }
 
 
 
 
   .wrapper {
     display: flex;
+    overflow: hidden;
 
     @include mobile {
       flex-direction: column;
@@ -91,6 +98,7 @@
           .im {
             font-size: 1.1vw;
             width: 9vw;
+            overflow: hidden;
             @include mobile {
               font-size: 3.3vw;
             }
@@ -137,11 +145,7 @@
               width: 1.4vw;
               height: 1.6vw;
               margin-right: 9px;
-              @include mobile {
-                width: 1.7vh;
-                height: 2.5vh;
-                
-              }
+              
             }
           }
 
@@ -169,11 +173,7 @@
               height: 1.6vw;
               margin-right: 9px;
               margin-top: 1.2px;
-              @include mobile {
-                width: 1.7vh;
-                height: 2.3vh;
-                margin-top: 5px;
-              }
+              
             }
           }
 
@@ -201,11 +201,7 @@
               height: 1.6vw;
               margin-right: 9px;
               margin-top: 1.2px;
-              @include mobile {
-                width: 1.7vh;
-                height: 2.3vh;
-                margin-top: 5px;
-              }
+              
             }
           }
 
@@ -233,11 +229,7 @@
               width: 1.4vw;
               height: 1.6vw;
               margin-right: 9px;
-              @include mobile {
-                width: 1.7vh;
-                height: 2.3vh;
-                margin-top: 5px;
-              }
+              
             }
           }
         }

@@ -91,7 +91,7 @@
           align-items: baseline;
 
           @include mobile {
-            height: 10vh;
+            height: 9vh;
             
           }
 
@@ -134,9 +134,10 @@
             overflow: hidden;
 
             @include mobile {
-              font-size: 1.7vh;
+              font-size: 3.2vw;
               height: 2.3vh;
-              margin-top: 5px;
+              margin-top: 8px;
+              text-wrap: wrap;
             }
 
             .gradicon {
@@ -145,7 +146,6 @@
               width: 1.4vw;
               height: 1.6vw;
               margin-right: 9px;
-              
             }
           }
 
@@ -161,9 +161,10 @@
             overflow: hidden;
 
             @include mobile {
-              font-size: 1.7vh;
+              font-size: 3.2vw;
               height: 2.3vh;
-              margin-top: 5px;
+              margin-top: 8px;
+              text-wrap: wrap;
             }
 
             .ageicon {
@@ -173,7 +174,6 @@
               height: 1.6vw;
               margin-right: 9px;
               margin-top: 1.2px;
-              
             }
           }
 
@@ -189,9 +189,10 @@
             overflow: hidden;
 
             @include mobile {
-              font-size: 1.7vh;
+              font-size: 3.2vw;
               height: 2.3vh;
-              margin-top: 5px;
+              margin-top: 8px;
+              text-wrap: wrap;
             }
 
             .locicon {
@@ -218,11 +219,11 @@
             overflow: hidden;
 
             @include mobile {
-              font-size: 1.7vh;
+              font-size: 3.2vw;
               height: 2.3vh;
-              margin-top: 5px;
+              margin-top: 8px;
+              text-wrap: wrap;
             }
-
             .jobicon {
               position: relative;
               bottom: 3px;

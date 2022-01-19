@@ -70,13 +70,13 @@
                 input {
                     width: 60%;
                     height: 50px;
-                    font-size: 12px;
+                    font-size: 16px;
                 }
 
                 textarea {
                     width: 60%;
                     height: 400px;
-                    font-size: 10px;
+                    font-size: 14px;
                 }
 
                 button {
@@ -126,7 +126,7 @@
         
         .ishaan {
             flex:0.5;
-            font-size: 9.5px;
+            font-size: 14px;
             white-space: nowrap;
             
             @include mobile{
@@ -136,7 +136,7 @@
 
         .anay {
             flex: 0.5;
-            font-size: 9.5px;
+            font-size: 14px;
             white-space: nowrap;
             overflow: hidden;
             text-align: right;

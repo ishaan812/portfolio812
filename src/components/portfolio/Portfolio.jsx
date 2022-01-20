@@ -14,18 +14,21 @@ export default function Portfolio({Instapopupopen,setInstapopupopen}) {
                     </div>
                     <h2 className="caption">Instagram Downloader Bot</h2>
                 </div>
+                <h2 className="belowcaption">Instagram Downloader Bot</h2>
             </div>
             <div className="itemwrapper">
                 <div className="item">
                     <div className="thumbnail"><AiFillMail className="tn"/></div>
                     <h2 className="caption">Spam Checker</h2>
                 </div> 
+                <h2 className="belowcaption">Spam Checker</h2>
             </div>
             <div className="itemwrapper" >
                 <div className="item row2">
                     <div className="thumbnail"><AiFillCode className="tn"/></div>
                     <h2 className="caption">C++ project</h2>
                 </div>
+                <h2 className="belowcaption">C++ Project</h2>
             </div>
             
             </div>

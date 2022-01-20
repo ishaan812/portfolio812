@@ -15,7 +15,7 @@ export default function Contact() {
         <div className="contact" id="contact">
             <div className="wrapper">
                 <div className="left">
-                    <img src="https://media.giphy.com/media/xT9IgLn1wzhNpRQfTy/giphy.gif"  alt="shake" className="shake"></img>
+                    <img src="https://media.giphy.com/media/11fHSR7hmRLbkA/giphy.gif"  alt="animation" className="shake"></img>
                 </div>
                 <div className="right">
                     <h1>Contact form</h1>

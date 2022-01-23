@@ -1,6 +1,7 @@
 import React from 'react';
 import './contact.scss';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
     
@@ -8,7 +9,15 @@ export default function Contact() {
     
     const handleSubmit= (e) =>{
         e.preventDefault();
-        setmessage(true);
+        emailjs.sendForm('testpy812@gmail.com', 'template_rx7457v', e.target , 'user_JCMmPDtx3CJOCSTCtUmRb')
+        .then((result) => {
+          console.log(result.text);
+          setmessage(true);
+        }, (error) => {
+          console.log(error.text);
+        },
+        e.target.reset());
+        
     }
 
     return (
@@ -20,10 +29,10 @@ export default function Contact() {
                 <div className="right">
                     <h1>Contact form</h1>
                     <form onSubmit={handleSubmit}>
-                        <input type="text" placeholder="Email"></input>
-                        <textarea type="text" placeholder="Message"></textarea>
+                        <input type="text" placeholder="Name" name="name"></input>
+                        <textarea type="text" placeholder="Message" name="message"></textarea>
                         <button type="submit">Submit</button>
-                        {message && <span>Will get back to you ASAP :)  </span>}
+                        {message && <span>Will get back to you ASAP :)</span>}
                     </form>
                 </div>
             </div>

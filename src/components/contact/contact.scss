@@ -110,6 +110,11 @@
                     height: 20px;
                     overflow: hidden;
                     text-align: center;
+
+                    @include mobile{
+                        height: 40px;
+                    }
+                    
                 }
             }
         }

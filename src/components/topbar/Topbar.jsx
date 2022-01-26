@@ -11,11 +11,11 @@ export default function topbar({MenuOpen,SetMenuOpen}) {
                 <div className="Left">
                     <a href="#contact" className="Logo">I.S.</a>
                     <div className="github">
-                        <AiFillCode className="codeicon"/>
+                        <AiFillCode className="codeicon" onClick={event=>window.open('https://github.com/ishaan812')}/>
                         <span> https://github.com/ishaan812</span>     
                     </div>
                     <div className="mail">
-                        <AiFillMail className="mailicon"/>
+                        <AiFillMail className="mailicon" onClick={event=>window.open('mailto:ishaan.shah@gmail.com')}/>
                         <span> ishaan.shah@gmail.com</span>     
                     </div>
                     

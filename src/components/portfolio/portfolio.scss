@@ -1,8 +1,10 @@
 @import "../../global.scss";
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
+$instagramgradient: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+
 .portfolio {
-    background-color: rgba(197, 197, 251, 0.993);
+    background-color: #28282B;
 
     .slider {
         position: relative;
@@ -28,7 +30,7 @@
             //Instagram
 
             .instagramy {
-                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                background: $instagramgradient;
                 width: 600px;
                 height: 300px;
                 overflow: hidden;
@@ -47,8 +49,8 @@
 
 
                 &:hover {
-                    transform: scale(1.07);
                     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+                    
                 }
 
                 .thumbnail {
@@ -98,7 +100,7 @@
             }
             .belowcaption{
                 opacity: 0;
-                color: #28282B;
+                color: whitesmoke;
                 position: relative;
                 text-decoration: solid;
                 font-size: 1.7vh;
@@ -114,7 +116,7 @@
 
             //General
 
-            .item {
+            .react,.Tkinter{
                 background-color: bisque;
                 width: 600px;
                 height: 300px;
@@ -145,7 +147,7 @@
 
                 .caption {
                     position: relative;
-                    left: 40%;
+                    left: 20%;
                     bottom: 12%;
                     color: black;
                     font-size: 24px;
@@ -160,10 +162,18 @@
                 }
             }
 
+            .react{
+                .caption{
+                    left:26%;
+                }
+            }
+
         }
+
 
 
 
     }
 
+    
 }

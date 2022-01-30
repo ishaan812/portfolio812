@@ -29,7 +29,7 @@ export default function Instapopup({Instapopupopen,setInstapopupopen}) {
                     <div className="buttons">
                         
                         <button className="githubbutton" onClick={event =>  window.open('https://github.com/ishaan812/insta-bot','_blank')}>
-                            <img src={require('./GitHub_Logo_White.png')}/>
+                            <img src={require('./GitHub_Logo_White.png')} alt="Instagram icon"/>
                         </button>
                         
                     </div>

@@ -17,18 +17,18 @@ export default function Portfolio({Instapopupopen,setInstapopupopen}) {
                 <h2 className="belowcaption">Instagram Downloader Bot</h2>
             </div>
             <div className="itemwrapper">
-                <div className="item">
+                <div className="Tkinter">
                     <div className="thumbnail"><AiFillMail className="tn"/></div>
-                    <h2 className="caption">Spam Checker</h2>
+                    <h2 className="caption">Tkinter Display Picture Downloader</h2>
                 </div> 
-                <h2 className="belowcaption">Spam Checker</h2>
+                <h2 className="belowcaption">Tkinter Display Picture Downloader</h2>
             </div>
             <div className="itemwrapper" >
-                <div className="item row2">
+                <div className="react row2">
                     <div className="thumbnail"><AiFillCode className="tn"/></div>
-                    <h2 className="caption">C++ project</h2>
+                    <h2 className="caption">React JS Portfolio Website</h2>
                 </div>
-                <h2 className="belowcaption">C++ Project</h2>
+                <h2 className="belowcaption">React JS Portfolio Website</h2>
             </div>
             
             </div>

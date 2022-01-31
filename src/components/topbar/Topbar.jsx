@@ -9,7 +9,7 @@ export default function topbar({MenuOpen,SetMenuOpen}) {
         <div className={"topbar " +(MenuOpen && "active")}>
             <div className="Wrapper">
                 <div className="Left">
-                    <a href="#contact" className="Logo"><img src={require("./IS.gif")}/></a>
+                    <a href="#contact" className="Logo"><img src={require("./IS.gif")} alt="Logo"/></a>
                     <div className="github">
                         <AiFillCode className="codeicon" onClick={event=>window.open('https://github.com/ishaan812')}/>
                         <span> https://github.com/ishaan812</span>     

@@ -13,8 +13,8 @@ export default function Intro() {
 
     useEffect(()=>{
         init(Greeter.current, 
-                {strings: ['Hello!', 'नमस्ते!','こんにちわ!','Hola!' ,'Hej!', "Bonjour!" ,"Guten Tag!", "Marhaba!"] ,
-                backDelay: 3000,
+            {strings: ['Hello!', 'नमस्ते!','こんにちわ!','Hola!' ,'Hej!', "Bonjour!" ,"Guten Tag!", "Marhaba!"] ,
+            backDelay: 3000 ,
             loop: true})
 
     })

@@ -1,8 +1,7 @@
 import React from 'react';
 import './portfolio.scss';
-import {AiFillCode,AiFillMail} from "react-icons/ai";
 
-export default function Portfolio({Instapopupopen,setInstapopupopen}) {
+export default function Portfolio({Instapopupopen,setInstapopupopen,Portpopupopen,setPortpopupopen,Tkinterpopupopen,setTkinterpopupopen}) {
     
     return (
         <div className="portfolio" id="portfolio">
@@ -17,18 +16,22 @@ export default function Portfolio({Instapopupopen,setInstapopupopen}) {
                 <h2 className="belowcaption">Instagram Downloader Bot</h2>
             </div>
             <div className="itemwrapper">
-                <div className="Tkinter">
-                    <div className="thumbnail"><AiFillMail className="tn"/></div>
-                    <h2 className="caption">Tkinter Display Picture Downloader</h2>
+                <div className="Tkinter" onClick={()=>setTkinterpopupopen(!Tkinterpopupopen)}>
+                    <div className="thumbnail">
+                        <img className="tn" alt="icon" src={require('./tkinter.png')} ></img>
+                    </div>
+                    <h2 className="caption">Display Picture Downloader</h2>
                 </div> 
-                <h2 className="belowcaption">Tkinter Display Picture Downloader</h2>
+                <h2 className="belowcaption">Display Picture Downloader</h2>
             </div>
             <div className="itemwrapper" >
-                <div className="react row2">
-                    <div className="thumbnail"><AiFillCode className="tn"/></div>
-                    <h2 className="caption">React JS Portfolio Website</h2>
+                <div className="react row2" onClick={()=>setPortpopupopen(!Portpopupopen)}>
+                    <div className="thumbnail">
+                        <img className="tn" alt="icon" src={require('./portfolio.png')} ></img>
+                    </div>
+                    <h2 className="caption">Portfolio Website</h2>
                 </div>
-                <h2 className="belowcaption">React JS Portfolio Website</h2>
+                <h2 className="belowcaption">Portfolio Website</h2>
             </div>
             
             </div>

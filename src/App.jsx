@@ -6,8 +6,9 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact"
 import Menu from "./components/menu/menu"
 import Instapopup from "./components/instapopup/Instapopup";
+import Portpopup from "./components/portpopup/portpopup";
+import Tkinterpopup from "./components/tkinterpopup/tkinterpopup";
 import './app.scss';
-import ClipLoader from "react-spinners/ClipLoader";
 import { BarLoader } from "react-spinners";
 
 
@@ -16,13 +17,16 @@ import { BarLoader } from "react-spinners";
 function App() {
   const [MenuOpen,SetMenuOpen]=useState(false);
   const [Instapopupopen,setInstapopupopen]=useState(false);
+  const [Portpopupopen,setPortpopupopen]=useState(false);
+  const [Tkinterpopupopen,setTkinterpopupopen]=useState(false);
   const [Loading,SetLoading]=useState(false);
+  const [portpopimg,setportpopimg]=useState(1);
 
   useEffect(()=>{
     SetLoading(true);
     setTimeout(()=>{
       SetLoading(false)
-    },5000)
+    },3000)
   },[])
     
   return (
@@ -36,11 +40,17 @@ function App() {
 
         :
 
-        <><Topbar MenuOpen={MenuOpen} SetMenuOpen={SetMenuOpen} /><Menu MenuOpen={MenuOpen} SetMenuOpen={SetMenuOpen} />
-          <Instapopup Instapopupopen={Instapopupopen} setInstapopupopen={setInstapopupopen} />
+        <>
+        <Topbar MenuOpen={MenuOpen} SetMenuOpen={SetMenuOpen} />
+          <Menu MenuOpen={MenuOpen} SetMenuOpen={SetMenuOpen} />
+          <Instapopup Instapopupopen={Instapopupopen} setInstapopupopen={setInstapopupopen}  />
+          <Portpopup Portpopupopen={Portpopupopen} setPortpopupopen={setPortpopupopen} portpopimg={portpopimg} setportpopimg={setportpopimg} />
+          <Tkinterpopup Tkinterpopupopen={Tkinterpopupopen} setTkinterpopupopen={setTkinterpopupopen} />
           <div className="sections">
             <Intro className="intro" />
-            <Portfolio Instapopupopen={Instapopupopen} setInstapopupopen={setInstapopupopen} />
+            <Portfolio Instapopupopen={Instapopupopen} setInstapopupopen={setInstapopupopen} 
+                      Portpopupopen={Portpopupopen} setPortpopupopen={setPortpopupopen} 
+                      Tkinterpopupopen={Tkinterpopupopen} setTkinterpopupopen={setTkinterpopupopen}  />
             <Contact />
           </div></>
       }

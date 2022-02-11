@@ -15,11 +15,15 @@
 
         img{
             margin-bottom:120px;
+            display: flex;
             @include mobile{
                 width: 300px;
                 height: 300px;
             }
         }
+        
+
+
 
         
         

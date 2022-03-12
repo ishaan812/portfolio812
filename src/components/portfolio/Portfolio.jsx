@@ -1,7 +1,7 @@
 import React from 'react';
 import './portfolio.scss';
 
-export default function Portfolio({Instapopupopen,setInstapopupopen,Portpopupopen,setPortpopupopen,Tkinterpopupopen,setTkinterpopupopen}) {
+export default function Portfolio({Instapopupopen,setInstapopupopen,Portpopupopen,setPortpopupopen,Exercisepopupopen,setExercisepopupopen}) {
     
     return (
         <div className="portfolio" id="portfolio">
@@ -16,13 +16,13 @@ export default function Portfolio({Instapopupopen,setInstapopupopen,Portpopupope
                 <h2 className="belowcaption">Instagram Downloader Bot</h2>
             </div>
             <div className="itemwrapper">
-                <div className="Tkinter" onClick={()=>setTkinterpopupopen(!Tkinterpopupopen)}>
+                <div className="exercise" onClick={()=>setExercisepopupopen(!Exercisepopupopen)}>
                     <div className="thumbnail">
                         <img className="tn" alt="icon" src={require('./tkinter.png')} ></img>
                     </div>
-                    <h2 className="caption">Display Picture Downloader</h2>
+                    <h2 className="caption">Exercise Tracker CRUD</h2>
                 </div> 
-                <h2 className="belowcaption">Display Picture Downloader</h2>
+                <h2 className="belowcaption">Exercise Tracker CRUD</h2>
             </div>
             <div className="itemwrapper" >
                 <div className="react row2" onClick={()=>setPortpopupopen(!Portpopupopen)}>

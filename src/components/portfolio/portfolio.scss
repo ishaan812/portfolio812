@@ -13,7 +13,8 @@ $instagramgradient: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, 
         overflow: hidden;
         
         .itemwrapper {
-            max-width: 50vw;
+            max-width: 40vw;
+            margin: 0vw 5vw;
             max-height: 47vh;
             display: flex;
             flex-wrap: wrap;
@@ -32,7 +33,8 @@ $instagramgradient: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, 
 
             .instagramy {
                 background: $instagramgradient;
-                width: 600px;
+                max-width: 600px;
+                
                 height: 300px;
                 overflow: hidden;
                 box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px, rgba(0, 0, 0, 0.3) 0px 10px 15px -5px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
@@ -82,7 +84,7 @@ $instagramgradient: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, 
                 .caption {
                     position: relative;
                     bottom: 13%;
-                    left: 15%;
+                    left: 20%;
                     color: #28282B;
                     text-decoration: solid;
                     font-size: 2vw;
@@ -117,7 +119,7 @@ $instagramgradient: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, 
 
             //General
 
-            .react,.Tkinter{
+            .react,.exercise{
                 background-color: bisque;
                 width: 600px;
                 height: 300px;
@@ -164,7 +166,7 @@ $instagramgradient: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, 
                 }
             }
             
-            .Tkinter{
+            .exercise{
                 background-color: #f6ecc4;
                 background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
                 .thumbnail{

@@ -7,7 +7,7 @@ import Contact from "./components/contact/Contact"
 import Menu from "./components/menu/menu"
 import Instapopup from "./components/instapopup/Instapopup";
 import Portpopup from "./components/portpopup/portpopup";
-import Tkinterpopup from "./components/tkinterpopup/tkinterpopup";
+import Exercisepopup from "./components/Exercisepopup/exercisepopup";
 import './app.scss';
 import { BarLoader } from "react-spinners";
 
@@ -18,7 +18,7 @@ function App() {
   const [MenuOpen,SetMenuOpen]=useState(false);
   const [Instapopupopen,setInstapopupopen]=useState(false);
   const [Portpopupopen,setPortpopupopen]=useState(false);
-  const [Tkinterpopupopen,setTkinterpopupopen]=useState(false);
+  const [Exercisepopupopen,setExercisepopupopen]=useState(false);
   const [Loading,SetLoading]=useState(false);
   const [portpopimg,setportpopimg]=useState(1);
 
@@ -45,12 +45,12 @@ function App() {
           <Menu MenuOpen={MenuOpen} SetMenuOpen={SetMenuOpen} />
           <Instapopup Instapopupopen={Instapopupopen} setInstapopupopen={setInstapopupopen}  />
           <Portpopup Portpopupopen={Portpopupopen} setPortpopupopen={setPortpopupopen} portpopimg={portpopimg} setportpopimg={setportpopimg} />
-          <Tkinterpopup Tkinterpopupopen={Tkinterpopupopen} setTkinterpopupopen={setTkinterpopupopen} />
+          <Exercisepopup Exercisepopupopen={Exercisepopupopen} setExercisepopupopen={setExercisepopupopen} />
           <div className="sections">
             <Intro className="intro" />
             <Portfolio Instapopupopen={Instapopupopen} setInstapopupopen={setInstapopupopen} 
                       Portpopupopen={Portpopupopen} setPortpopupopen={setPortpopupopen} 
-                      Tkinterpopupopen={Tkinterpopupopen} setTkinterpopupopen={setTkinterpopupopen}  />
+                      Exercisepopupopen={Exercisepopupopen} setExercisepopupopen={setExercisepopupopen}  />
             <Contact />
           </div></>
       }
